@@ -28,25 +28,25 @@ const fetchData = () => {
     <div v-if="error">{{ error }}</div>
     <!-- data user  -->
     <div v-for="user in data" :key="user.id">
-      <span> Name : {{ user.name }}</span>
+      <span> <strong>Name</strong> : {{ user.name }}</span>
       <!--  -->
 
       <!-- data adress info  -->
       <div v-for="street in user" :key="street.id">
-        <span v-if="street.city"> City : {{ street.city }}</span>
-        <span v-if="street.suite"> Suite : {{ street.suite }}</span>
-        <span v-if="street.street"> Street : {{ street.street }}</span>
+        <span v-if="street.city"> <strong>City</strong> : {{ street.city }}</span>
+        <span v-if="street.suite"> <strong>Suite</strong> : {{ street.suite }}</span>
+        <span v-if="street.street"> <strong>Street</strong> : {{ street.street }}</span>
 
         <!-- street info geo  -->
         <div v-for="geo in street" :key="geo.id">
-          <span v-if="geo.lat">Geo Lat : {{ geo.lat }}</span>
-          <span v-if="geo.lng"> Geo Lng : {{ geo.lng }}</span>
+          <span v-if="geo.lat"><strong>Geo</strong> Lat : {{ geo.lat }}</span>
+          <span v-if="geo.lng"> <strong>Geo Lng</strong>: {{ geo.lng }}</span>
         </div>
         <!--  -->
 
       </div>
       <!-- user phone  -->
-      <span v-if="user.phone">Phone: {{ user.phone }}</span>
+      <span v-if="user.phone"><strong>Phone</strong>: {{ user.phone }}</span>
     </div>
   </div>
 </template>
