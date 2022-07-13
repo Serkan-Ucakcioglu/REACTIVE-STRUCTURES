@@ -24,7 +24,7 @@ const fetchData = () => {
 </script>
 <template>
   <div class="container">
-    <button class="btn" @click="fetchData">Fetch Get Data</button>
+    <button class="btn" @click.stop="fetchData">Fetch Get Data</button>
     <div v-if="error">{{ error }}</div>
     <!-- data user  -->
     <div v-for="user in data" :key="user.id">
@@ -59,5 +59,14 @@ const fetchData = () => {
 .container .btn {
   padding: 0px 10px;
   height: 35px;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+  border-radius: 4px;
+}
+.btn:hover{
+  color: #fff;
+    outline: 0;
 }
 </style>
