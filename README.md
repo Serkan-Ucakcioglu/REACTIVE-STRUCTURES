@@ -1,24 +1,2 @@
-# ts
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Adjustable Background
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/98692987/178693278-5f60d94f-18d9-4ffd-b0d2-c92bd0a5ef2e.png">
